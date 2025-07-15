@@ -44,9 +44,16 @@
             background-color: #fff;
             padding: 1rem;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
             flex: 1 1 calc(33.333% - 2rem);
             box-sizing: border-box;
+            transition: all .3s ease-in-out;
+            border: 1px solid white;
+            height: 300px;
+            width: 100%;
+        }
+        .project:hover{
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
         .project h3 {
             margin-top: 0;
@@ -56,9 +63,31 @@
             padding: 1rem 0;
             background-color: #333;
             color: #fff;
-            position: fixed;
             width: 100%;
             bottom: 0;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        span{
+            color: #ff9a62;
+        }
+        .project p{
+            opacity: .8;
+        }
+        .project h3{
+            font-size: 1.5rem;
+        }
+        .project-1{
+            background-image: url(img/image.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .project-1 a h3,
+        .project-1 a p{
+            position: relative;
+            top: 150px;
         }
     </style>
 </head>
@@ -73,9 +102,11 @@
         </div>
         <div class="projects">
             <!-- Add your projects here -->
-            <div class="project">
-                <h3>Project 1</h3>
-                <p>Description of project 1.</p>
+            <div class="project project-1">
+                <a href="travel/index.html">
+                    <h3>Project 1 - <span>Travel&Tour</span></h3>
+                    <p>Front-End website displaying UI design for a travel and tour company.</p>
+                </a>
             </div>
             <div class="project">
                 <h3>Project 2</h3>
