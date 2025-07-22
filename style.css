@@ -1,0 +1,83 @@
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+        .intro {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .intro h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .intro p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        .project {
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33.333% - 2rem);
+            box-sizing: border-box;
+            transition: all .3s ease-in-out;
+            border: 1px solid white;
+            height: 300px;
+            width: 100%;
+        }
+        .project:hover{
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .project h3 {
+            margin-top: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: #fff;
+            width: 100%;
+            bottom: 0;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        span{
+            color: #ff9a62;
+        }
+        .project p{
+            opacity: .8;
+        }
+        .project h3{
+            font-size: 1.5rem;
+        }
+        .project-1{
+            background-image: url(img/image.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .project-1 a h3,
+        .project-1 a p{
+            position: relative;
+            top: 150px;
+        }
